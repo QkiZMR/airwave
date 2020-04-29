@@ -69,7 +69,7 @@ if(NOT DISABLE_32BIT)
 
     set_target_properties(${TARGET_NAME}-32 PROPERTIES
             COMPILE_FLAGS "-m32"
-            LINK_FLAGS "-m32"
+            LINK_FLAGS "-m32 -L/opt/wine-stable/lib/ -L/opt/wine-stable/lib/wine"
     )
 
     # Link with libraries
